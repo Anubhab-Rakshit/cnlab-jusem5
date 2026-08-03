@@ -1,0 +1,4 @@
+Hello from cnlab!
+This is a test message to simulate a noisy transmission.
+This file will be split into ethernet frames and sent over the network.
+Let's see if the CRC and checksum catch the errors!
