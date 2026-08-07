@@ -10,7 +10,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    int port = 5000;
+    int port = 6000;
 
     for (int i = 1; i < argc; ++i) {
         string a = argv[i];

@@ -30,7 +30,7 @@ inline string polybits(const string &name) {
   return g;
 }
 
-// CRC — polynomial long division over GF(2)
+// CRC — polynomial long division 
 inline string encodecrc(const string &bits, const string &poly) {
   string g = polybits(poly);
   int r = g.size() - 1;

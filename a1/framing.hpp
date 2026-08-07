@@ -1,12 +1,12 @@
 #ifndef FRAMING_HPP
 #define FRAMING_HPP
 
-#include <vector>
-#include <string>
+#include <algorithm>
 #include <fstream>
 #include <sstream>
-#include <algorithm>
+#include <string>
 #include <utility>
+#include <vector>
 
 using namespace std;
 
@@ -27,19 +27,50 @@ inline vector<unsigned char> readbytes(const string &path) {
                                istreambuf_iterator<char>());
 }
 
-// split byte stream into Ethernet-like frames
-inline vector<vector<unsigned char>> splitframes(const vector<unsigned char> &data, int payload) {
+// split byte stream into Ethernet-like frames (including MAC header)
+inline vector<vector<unsigned char>>
+splitframes(const vector<unsigned char> &data, int payload) {
   payload = max(46, min(1500, payload));
   vector<vector<unsigned char>> frames;
   for (size_t i = 0; i < data.size(); i += payload) {
-    auto end = data.begin() + min(data.size(), i + (size_t)payload);
-    vector<unsigned char> f(data.begin() + i, end);
-    if ((int)f.size() < 46)
-      f.resize(46, 0); // pad short frames
+    vector<unsigned char> f;
+
+    // dest mac
+    for (int j = 0; j < 6; ++j)
+      f.push_back(0xAA);
+
+    // source mac
+    for (int j = 0; j < 6; ++j)
+      f.push_back(0xBB);
+
+    // payload
+    int actual_len = min(data.size() - i, (size_t)payload);
+    f.push_back((actual_len >> 8) & 0xFF);
+    f.push_back(actual_len & 0xFF);
+
+    // data
+    auto start_it = data.begin() + i;
+    auto end_it = start_it + actual_len;
+    f.insert(f.end(), start_it, end_it);
+
+    if (actual_len < 46) {
+      f.resize(f.size() + (46 - actual_len), 0);
+    }
+
     frames.push_back(std::move(f));
   }
-  if (frames.empty())
-    frames.push_back(vector<unsigned char>(46, 0));
+
+  if (frames.empty()) {
+    vector<unsigned char> f;
+    for (int j = 0; j < 6; ++j)
+      f.push_back(0xAA);
+    for (int j = 0; j < 6; ++j)
+      f.push_back(0xBB);
+    f.push_back(0);
+    f.push_back(0); // Length = 0
+    f.resize(14 + 46, 0);
+    frames.push_back(std::move(f));
+  }
   return frames;
 }
 
@@ -99,7 +130,8 @@ inline string ackline(int no, bool chk, bool crc, const string &cls) {
          (crc ? "1" : "0") + "|" + cls;
 }
 
-inline bool parseack(const string &s, int &no, bool &chk, bool &crc, string &cls) {
+inline bool parseack(const string &s, int &no, bool &chk, bool &crc,
+                     string &cls) {
   vector<string> p;
   string tmp;
   istringstream iss(s);

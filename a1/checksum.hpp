@@ -1,8 +1,8 @@
 #ifndef CHECKSUM_HPP
 #define CHECKSUM_HPP
 
-#include <vector>
 #include <cstdint>
+#include <vector>
 
 using namespace std;
 
@@ -16,8 +16,10 @@ inline vector<unsigned char> checksum_enc(const vector<unsigned char> &data) {
   vector<unsigned char> x = data;
   if (x.size() & 1)
     x.push_back(0);
+
   uint16_t s = 0;
   for (size_t i = 0; i < x.size(); i += 2) {
+
     uint16_t w = ((uint16_t)x[i] << 8) | x[i + 1];
     s = onesadd(s, w);
   }
