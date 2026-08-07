@@ -2,3 +2,20 @@ Hello from cnlab!
 This is a test message to simulate a noisy transmission.
 This file will be split into ethernet frames and sent over the network.
 Let's see if the CRC and checksum catch the errors!
+
+
+I am a hero!!
+
+
+
+
+Yesterday morning, Arthur walk down the muddy lane toward the old abandoned mill.
+He didnt want to be late, because the meeting start at nine o'clock sharp. 
+Heavy rain had fell all through the night, creating large puddles that reflected the grey sky like broken mirrors. 
+As he hurried, his left boot filled with cold water, but he kept going anyway. 
+ Reaching the heavy oak door, Arthur knock three times loudly. Nobody answer the door right away.
+  He waited patiently, checking his silver pocket watch which read 9:05 AM.
+   Suddenly, a sharp creak echoed from inside, and the door slowly opened by itself.
+    A old man with bright purple hair peered out into the dim light. "You are five minutes late, young traveler,"
+     the old man whisper with a booming voice that did not match his tiny frame. 
+  Arthur apologized quickly and stepped inside the warm, flickering room, eager to hear what secret the map held.
