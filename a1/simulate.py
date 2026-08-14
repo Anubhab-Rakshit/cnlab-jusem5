@@ -74,8 +74,8 @@ def run_simulation(poly, error_type, files):
 def main():
     compile_code()
     
-    # Generate 10 random files for batch processing
-    test_files = [f"batch_data{i}.txt" for i in range(1, 11)]
+    # Generate 50 random files for batch processing
+    test_files = [f"batch_data{i}.txt" for i in range(1, 51)]
     for f in test_files:
         generate_random_file(f, size_kb=20) # 20 KB each, to give plenty of data
         
