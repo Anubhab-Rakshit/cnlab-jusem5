@@ -1,1 +1,27 @@
 Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. Hello World! This is a test file for CN assignment 2 flow control. 
+
+python3 receiver.py --protocol sr --window 4 --port 8000
+
+python3 sender.py --protocol sr --window 4 --file sample.txt --port 8000
+
+
+# Terminal 1:
+python3 receiver.py --protocol gbn --window 4
+
+# Terminal 2:
+python3 sender.py --protocol gbn --window 4 --file sample.txt --inject drop_2
+
+
+# Terminal 1:
+python3 receiver.py --protocol sr --window 4
+
+# Terminal 2:
+python3 sender.py --protocol sr --window 4 --file sample.txt --inject corr_1
+
+
+
+# Terminal 1:
+python3 receiver.py --protocol saw
+
+# Terminal 2:
+python3 sender.py --protocol saw --file sample.txt --inject drop_ack_1

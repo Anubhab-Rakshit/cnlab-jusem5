@@ -13,10 +13,14 @@ def stop_and_wait(sock, dest, frames, timeout_val, loss, err, inject):
     seq_bits = 1
     seq_mod = 1 << seq_bits
     injected = set()
+    total_transmissions = 0
+    retransmissions = 0
+    start_time = time.time()
     
     for i, payload in enumerate(frames):
         seq = i % seq_mod
         frame = make_frame(seq, payload)
+        first_attempt = True
         
         while True:
             # Check for injections
@@ -24,10 +28,15 @@ def stop_and_wait(sock, dest, frames, timeout_val, loss, err, inject):
             force_err = (inject == f'corr_{seq}' and inject not in injected)
             if force_drop or force_err:
                 injected.add(inject)
-                print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                print(f"[Sender] -- INJECTING ERROR: {inject} --")
                 
+            total_transmissions += 1
+            if not first_attempt:
+                retransmissions += 1
+            first_attempt = False
+
             # Simulate channel
-            sim_frame = channel_simulate(frame, loss, err, max_delay=0.1, force_drop=force_drop, force_err=force_err)
+            sim_frame = channel_simulate(frame, loss, err, max_delay=0.0, force_drop=force_drop, force_err=force_err)
             if sim_frame:
                 sock.sendto(sim_frame, dest)
                 print(f"[Sender] Sent frame {seq}")
@@ -41,7 +50,7 @@ def stop_and_wait(sock, dest, frames, timeout_val, loss, err, inject):
                 
                 if inject == f'drop_ack_{ack_seq}' and inject not in injected:
                     injected.add(inject)
-                    print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                    print(f"[Sender] -- INJECTING ERROR: {inject} --")
                     raise socket.timeout
                     
                 if is_valid and ack_seq == (seq + 1) % seq_mod:
@@ -52,6 +61,9 @@ def stop_and_wait(sock, dest, frames, timeout_val, loss, err, inject):
             except socket.timeout:
                 print(f"[Sender] Timeout for frame {seq}. Retransmitting...")
 
+    elapsed = time.time() - start_time
+    print(f"[Sender Stats] total_frames={len(frames)} transmissions={total_transmissions} retransmissions={retransmissions} elapsed={elapsed:.3f}")
+
 def go_back_n(sock, dest, frames, window_size, timeout_val, loss, err, inject):
     seq_mod = 256
     base = 0
@@ -59,6 +71,10 @@ def go_back_n(sock, dest, frames, window_size, timeout_val, loss, err, inject):
     num_frames = len(frames)
     timers = {}
     injected = set()
+    total_transmissions = 0
+    retransmissions = 0
+    sent_indices = set()
+    start_time = time.time()
     
     sock.settimeout(0.1) # short polling
     
@@ -72,8 +88,13 @@ def go_back_n(sock, dest, frames, window_size, timeout_val, loss, err, inject):
             force_err = (inject == f'corr_{seq}' and inject not in injected)
             if force_drop or force_err:
                 injected.add(inject)
-                print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                print(f"[Sender] -- INJECTING ERROR: {inject} --")
                 
+            total_transmissions += 1
+            if next_seq in sent_indices:
+                retransmissions += 1
+            sent_indices.add(next_seq)
+
             sim_frame = channel_simulate(frame, loss, err, max_delay=0.0, force_drop=force_drop, force_err=force_err)
             if sim_frame:
                 sock.sendto(sim_frame, dest)
@@ -89,7 +110,7 @@ def go_back_n(sock, dest, frames, window_size, timeout_val, loss, err, inject):
             ack_seq, is_valid = parse_ack(ack)
             if inject == f'drop_ack_{ack_seq}' and inject not in injected:
                 injected.add(inject)
-                print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                print(f"[Sender] -- INJECTING ERROR: {inject} --")
                 is_valid = False # Pretend it dropped
                 
             if is_valid:
@@ -111,6 +132,9 @@ def go_back_n(sock, dest, frames, window_size, timeout_val, loss, err, inject):
             print(f"[Sender] Timeout! Go-Back-N from {base}")
             next_seq = base # Reset to base to resend
 
+    elapsed = time.time() - start_time
+    print(f"[Sender Stats] total_frames={num_frames} transmissions={total_transmissions} retransmissions={retransmissions} elapsed={elapsed:.3f}")
+
 def selective_repeat(sock, dest, frames, window_size, timeout_val, loss, err, inject):
     seq_mod = 256
     base = 0
@@ -120,6 +144,9 @@ def selective_repeat(sock, dest, frames, window_size, timeout_val, loss, err, in
     acked = [False] * num_frames
     timers = {}
     injected = set()
+    total_transmissions = 0
+    retransmissions = 0
+    start_time = time.time()
     
     sock.settimeout(0.1)
     
@@ -132,8 +159,9 @@ def selective_repeat(sock, dest, frames, window_size, timeout_val, loss, err, in
             force_err = (inject == f'corr_{seq}' and inject not in injected)
             if force_drop or force_err:
                 injected.add(inject)
-                print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                print(f"[Sender] -- INJECTING ERROR: {inject} --")
                 
+            total_transmissions += 1
             sim_frame = channel_simulate(frame, loss, err, max_delay=0.0, force_drop=force_drop, force_err=force_err)
             if sim_frame:
                 sock.sendto(sim_frame, dest)
@@ -148,7 +176,7 @@ def selective_repeat(sock, dest, frames, window_size, timeout_val, loss, err, in
             
             if inject == f'drop_ack_{ack_seq}' and inject not in injected:
                 injected.add(inject)
-                print(f"[Sender] *** INJECTING ERROR: {inject} ***")
+                print(f"[Sender] -- INJECTING ERROR: {inject} --")
                 is_valid = False
                 
             if is_valid:
@@ -169,12 +197,17 @@ def selective_repeat(sock, dest, frames, window_size, timeout_val, loss, err, in
         for i in range(base, next_seq):
             if not acked[i] and i in timers and (time.time() - timers[i]) > timeout_val:
                 print(f"[Sender] Timeout for frame {i % seq_mod}. Resending.")
+                total_transmissions += 1
+                retransmissions += 1
                 seq = i % seq_mod
                 frame = make_frame(seq, frames[i])
                 sim_frame = channel_simulate(frame, loss, err, max_delay=0.0)
                 if sim_frame:
                     sock.sendto(sim_frame, dest)
                 timers[i] = time.time()
+
+    elapsed = time.time() - start_time
+    print(f"[Sender Stats] total_frames={num_frames} transmissions={total_transmissions} retransmissions={retransmissions} elapsed={elapsed:.3f}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
