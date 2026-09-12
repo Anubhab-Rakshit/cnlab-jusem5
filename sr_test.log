@@ -1,0 +1,32 @@
+Total frames to send: 15
+[Sender] Sent frame 0 (Index 0)
+[Sender] Sent frame 1 (Index 1)
+[Sender] Sent frame 2 (Index 2)
+[Sender] Sent frame 3 (Index 3)
+[Sender] Got ACK 0
+[Sender] Sent frame 4 (Index 4)
+[Sender] Got ACK 1
+[Sender] Sent frame 5 (Index 5)
+[Sender] Got ACK 2
+[Sender] Sent frame 6 (Index 6)
+[Sender] Got ACK 3
+[Sender] Sent frame 7 (Index 7)
+[Sender] Got ACK 4
+[Sender] Sent frame 8 (Index 8)
+[Sender] Got ACK 5
+[Sender] Sent frame 9 (Index 9)
+[Sender] Got ACK 6
+[Sender] Sent frame 10 (Index 10)
+[Sender] Got ACK 7
+[Sender] Sent frame 11 (Index 11)
+[Sender] Got ACK 8
+[Sender] Sent frame 12 (Index 12)
+[Sender] Got ACK 9
+[Sender] Sent frame 13 (Index 13)
+[Sender] Got ACK 10
+[Sender] Sent frame 14 (Index 14)
+[Sender] Got ACK 11
+[Sender] Got ACK 12
+[Sender] Got ACK 13
+[Sender] Got ACK 14
+Done!

@@ -1,0 +1,47 @@
+Total frames to send: 15
+[Sender] Sent frame 0 (Index 0)
+[Sender] Sent frame 1 (Index 1)
+[Sender] Sent frame 2 (Index 2)
+[Sender] Sent frame 3 (Index 3)
+[Sender] Got cumulative ACK 1
+[Sender] Window advanced to 1
+[Sender] Sent frame 4 (Index 4)
+[Sender] Got cumulative ACK 2
+[Sender] Window advanced to 2
+[Sender] Sent frame 5 (Index 5)
+[Sender] Got cumulative ACK 3
+[Sender] Window advanced to 3
+[Sender] Sent frame 6 (Index 6)
+[Sender] Got cumulative ACK 4
+[Sender] Window advanced to 4
+[Sender] Sent frame 7 (Index 7)
+[Sender] Got cumulative ACK 5
+[Sender] Window advanced to 5
+[Sender] Sent frame 8 (Index 8)
+[Sender] Got cumulative ACK 6
+[Sender] Window advanced to 6
+[Sender] Sent frame 9 (Index 9)
+[Sender] Got cumulative ACK 7
+[Sender] Window advanced to 7
+[Sender] Sent frame 10 (Index 10)
+[Sender] Got cumulative ACK 8
+[Sender] Window advanced to 8
+[Sender] Sent frame 11 (Index 11)
+[Sender] Got cumulative ACK 9
+[Sender] Window advanced to 9
+[Sender] Sent frame 12 (Index 12)
+[Sender] Got cumulative ACK 10
+[Sender] Window advanced to 10
+[Sender] Sent frame 13 (Index 13)
+[Sender] Got cumulative ACK 11
+[Sender] Window advanced to 11
+[Sender] Sent frame 14 (Index 14)
+[Sender] Got cumulative ACK 12
+[Sender] Window advanced to 12
+[Sender] Got cumulative ACK 13
+[Sender] Window advanced to 13
+[Sender] Got cumulative ACK 14
+[Sender] Window advanced to 14
+[Sender] Got cumulative ACK 15
+[Sender] Window advanced to 15
+Done!
