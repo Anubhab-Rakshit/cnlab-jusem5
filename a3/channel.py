@@ -3,6 +3,13 @@ import argparse
 import time
 import json
 import threading
+from datetime import datetime
+
+class Colors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    YELLOW = '\033[93m'
+    RESET = '\033[0m'
 
 class Channel:
     def __init__(self, host, port):
@@ -20,6 +27,20 @@ class Channel:
         
         self.lock = threading.Lock()
         self.running = True
+        self.start_time = time.time()
+        
+        # Clear/Create trace log file
+        with open("trace_log.txt", "w") as f:
+            f.write(f"--- CSMA Simulation Trace Started at {datetime.now()} ---\n")
+            
+    def log_event(self, event_type, message, color_code=""):
+        elapsed = time.time() - self.start_time
+        # Write to log file
+        with open("trace_log.txt", "a") as f:
+            f.write(f"[{elapsed:.3f}s] {event_type}: {message}\n")
+        # Live colored terminal output (only print significant events to avoid flooding, but here we'll print them)
+        if event_type in ["COLLISION", "SUCCESS"]:
+            print(f"[{elapsed:.3f}s] {color_code}[{event_type}]{Colors.RESET} {message}")
         
     def get_state(self):
         with self.lock:
@@ -62,6 +83,10 @@ class Channel:
                         if not self.active_transmissions[sid]['collided']:
                             self.active_transmissions[sid]['collided'] = True
                     self.total_collisions += 1
+                    active_ids = list(self.active_transmissions.keys())
+                    self.log_event("COLLISION", f"Stations {active_ids} collided!", Colors.RED)
+                else:
+                    self.log_event("TX_START", f"Station {station_id} started transmitting.")
             self.sock.sendto("ACK".encode(), addr)
             
         elif cmd == "TX_END":
@@ -74,6 +99,7 @@ class Channel:
                         status = "COLLISION"
                     else:
                         self.total_success += 1
+                        self.log_event("SUCCESS", f"Station {station_id} transmission complete.", Colors.GREEN)
                     del self.active_transmissions[station_id]
             self.sock.sendto(status.encode(), addr)
             

@@ -15,7 +15,7 @@ class Station:
         self.sock.settimeout(2.0)
         
         self.slot_time = 0.01
-        self.tx_time = 0.1
+        self.tx_time_base = 0.1  # Base frame duration
         self.max_backoff_attempts = 10
         
         self.collisions = 0
@@ -87,12 +87,14 @@ class Station:
                         time.sleep(self.slot_time)
                 
                 # Transmit
+                # Variable frame size (takes between 50% to 150% of base tx_time)
+                current_tx_time = self.tx_time_base * random.uniform(0.5, 1.5)
                 self.tx_start()
                 
                 if self.strategy == "csmacd":
                     # CSMA/CD: Transmit and sense for collision simultaneously
                     collision_detected = False
-                    steps = int(self.tx_time / self.slot_time)
+                    steps = int(current_tx_time / self.slot_time)
                     for _ in range(steps):
                         time.sleep(self.slot_time)
                         if self.sense() == "COLLISION":
@@ -116,7 +118,7 @@ class Station:
                             success = True
                 else:
                     # Non-CD: transmit fully, then check result
-                    time.sleep(self.tx_time)
+                    time.sleep(current_tx_time)
                     res = self.tx_end()
                     
                     if res == "COLLISION":

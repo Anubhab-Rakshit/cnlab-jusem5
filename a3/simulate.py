@@ -29,8 +29,9 @@ def run_simulation(strategy, n_stations, p=0.5, frames_per_station=5, port=8000)
     total_delay = 0
     total_station_collisions = 0
     
-    for proc in station_procs:
+    for i, proc in enumerate(station_procs):
         stdout, _ = proc.communicate()
+        print(f"\033[94m[PROGRESS]\033[0m Station {i+1}/{n_stations} completed.")
         # Parse stdout: Station st_X finished. Frames: 5, Collisions: 2, Avg Delay: 0.123s
         for line in stdout.splitlines():
             if "Avg Delay:" in line:
@@ -86,10 +87,10 @@ def main():
     
     # i) For p-persistent CSMA, plot metrics as functions of p (fixed N = 10)
     p_values = [0.1, 0.3, 0.5, 0.7, 0.9] if not args.quick else [0.3, 0.7]
-    print("--- Simulating p-persistent with varying p (N=10) ---")
+    print("\n\033[1;36m=== PHASE 1: Simulating p-persistent with varying p (N=10) ===\033[0m")
     port = 8500
     for p in p_values:
-        print(f"Running p-persistent, p={p}...")
+        print(f"\n\033[1;33m>>> Running p-persistent, p={p}...\033[0m")
         res = run_simulation("p-persistent", n_stations=10, p=p, frames_per_station=3, port=port)
         results.append(res)
         port += 1
@@ -103,11 +104,11 @@ def main():
     schemes = ["non-persistent", "1-persistent", "p-persistent", "csmacd"]
     N_values = [2, 5, 10, 15, 20] if not args.quick else [2, 5]
     
-    print("\n--- Simulating all schemes with varying N ---")
+    print("\n\033[1;36m=== PHASE 2: Simulating all schemes with varying N ===\033[0m")
     for strategy in schemes:
         for N in N_values:
             p_val = best_p if strategy == "p-persistent" else 0.5
-            print(f"Running {strategy}, N={N}...")
+            print(f"\n\033[1;33m>>> Running {strategy}, N={N}...\033[0m")
             res = run_simulation(strategy, n_stations=N, p=p_val, frames_per_station=3, port=port)
             results.append(res)
             port += 1
