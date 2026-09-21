@@ -1,0 +1,11 @@
+strategy,N,p,collisions,avg_delay,throughput
+p-persistent,10,0.3,3,0.907,0.7973
+p-persistent,10,0.7,26,1.4685,0.5475
+non-persistent,2,0.5,1,0.251,0.7005
+non-persistent,5,0.5,0,0.399,0.8846
+1-persistent,2,0.5,2,0.288,0.6187
+1-persistent,5,0.5,7,0.5262,0.6569
+p-persistent,2,0.3,0,0.205,0.7415
+p-persistent,5,0.3,2,0.4976,0.6698
+csmacd,2,0.5,2,0.2695,0.6516
+csmacd,5,0.5,9,0.6534,0.6101
