@@ -1,119 +1,1247 @@
---- CSMA Channel Emulation Trace Started at 2026-09-25 16:27:53.808406 ---
+--- CSMA Channel Emulation Trace Started at 2026-09-25 16:37:26.345012 ---
 Time       | Event        | Details
 --------------------------------------------------------------------------------
-[  0.523s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
-[  0.526s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
-[  0.526s] | COLLISION    | Stations ['st_0', 'st_1', 'st_2'] collided on wire! (Active signals interfered)
-[  0.534s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  0.539s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  0.612s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  0.613s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
-[  0.615s] | COLLISION    | Stations ['st_1', 'st_3'] collided on wire! (Active signals interfered)
-[  0.623s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  0.623s] | COLLISION    | Stations ['st_3', 'st_2'] collided on wire! (Active signals interfered)
-[  0.636s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  0.728s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  0.728s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
-[  0.735s] | COLLISION    | Stations ['st_3', 'st_2'] collided on wire! (Active signals interfered)
-[  0.748s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  0.839s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  0.843s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
-[  0.844s] | COLLISION    | Stations ['st_4', 'st_0'] collided on wire! (Active signals interfered)
-[  0.847s] | COLLISION    | Stations ['st_4', 'st_0', 'st_2'] collided on wire! (Active signals interfered)
-[  0.857s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  0.857s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  0.857s] | COLLISION    | Stations ['st_2', 'st_0'] collided on wire! (Active signals interfered)
-[  0.860s] | COLLISION    | Stations ['st_2', 'st_0', 'st_1'] collided on wire! (Active signals interfered)
-[  0.870s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  0.873s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  0.957s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  0.957s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
-[  0.961s] | COLLISION    | Stations ['st_4', 'st_1'] collided on wire! (Active signals interfered)
-[  0.970s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  1.035s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  1.040s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
-[  1.040s] | COLLISION    | Stations ['st_3', 'st_4'] collided on wire! (Active signals interfered)
-[  1.042s] | COLLISION    | Stations ['st_3', 'st_4', 'st_2'] collided on wire! (Active signals interfered)
-[  1.052s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  1.054s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  1.204s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  1.208s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
-[  1.209s] | COLLISION    | Stations ['st_4', 'st_3'] collided on wire! (Active signals interfered)
-[  1.220s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  1.282s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  1.289s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
-[  1.291s] | COLLISION    | Stations ['st_1', 'st_0'] collided on wire! (Active signals interfered)
-[  1.292s] | COLLISION    | Stations ['st_1', 'st_0', 'st_3'] collided on wire! (Active signals interfered)
-[  1.301s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  1.303s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  1.303s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  1.413s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
-[  1.511s] | SUCCESS      | Station st_1 transmission delivered cleanly.
-[  1.511s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
-[  1.690s] | SUCCESS      | Station st_3 transmission delivered cleanly.
-[  1.695s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
-[  1.696s] | COLLISION    | Stations ['st_2', 'st_4'] collided on wire! (Active signals interfered)
-[  1.696s] | COLLISION    | Stations ['st_2', 'st_4', 'st_0'] collided on wire! (Active signals interfered)
-[  1.697s] | COLLISION    | Stations ['st_2', 'st_4', 'st_0', 'st_1'] collided on wire! (Active signals interfered)
-[  1.708s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  1.710s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  1.711s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  1.863s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  1.865s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
-[  1.866s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
-[  1.866s] | COLLISION    | Stations ['st_0', 'st_1', 'st_3'] collided on wire! (Active signals interfered)
-[  1.876s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  1.879s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  1.880s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  1.880s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "/CD collisions over a shared bus netw..."
-[  2.053s] | SUCCESS      | Station st_3 transmission delivered cleanly.
-[  2.054s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
-[  2.125s] | SUCCESS      | Station st_4 transmission delivered cleanly.
-[  2.129s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
-[  2.132s] | COLLISION    | Stations ['st_2', 'st_3'] collided on wire! (Active signals interfered)
-[  2.136s] | COLLISION    | Stations ['st_2', 'st_3', 'st_1'] collided on wire! (Active signals interfered)
-[  2.143s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  2.146s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
-[  2.213s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  2.218s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "roviding a significantly larger file,..."
-[  2.353s] | SUCCESS      | Station st_3 transmission delivered cleanly.
-[  2.357s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "/CD collisions over a shared bus netw..."
-[  2.359s] | COLLISION    | Stations ['st_4', 'st_1'] collided on wire! (Active signals interfered)
-[  2.371s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  2.484s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  2.485s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "/CD collisions over a shared bus netw..."
-[  2.562s] | SUCCESS      | Station st_4 transmission delivered cleanly.
-[  2.570s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
-[  2.738s] | SUCCESS      | Station st_0 transmission delivered cleanly.
-[  2.741s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
-[  2.742s] | COLLISION    | Stations ['st_4', 'st_2'] collided on wire! (Active signals interfered)
-[  2.753s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  2.818s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
-[  2.825s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "/CD collisions over a shared bus netw..."
-[  2.830s] | COLLISION    | Stations ['st_1', 'st_4'] collided on wire! (Active signals interfered)
-[  2.837s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  2.952s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  2.954s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
-[  2.954s] | COLLISION    | Stations ['st_4', 'st_0'] collided on wire! (Active signals interfered)
-[  2.966s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
-[  2.967s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  2.980s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "/CD collisions over a shared bus netw..."
-[  3.153s] | SUCCESS      | Station st_0 transmission delivered cleanly.
-[  3.159s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
-[  3.249s] | SUCCESS      | Station st_4 transmission delivered cleanly.
-[  3.255s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "roviding a significantly larger file,..."
-[  3.256s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
-[  3.269s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
-[  3.368s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
-[  3.379s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "roviding a significantly larger file,..."
-[  3.503s] | SUCCESS      | Station st_0 transmission delivered cleanly.
-[  3.504s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "/CD collisions over a shared bus netw..."
-[  3.683s] | SUCCESS      | Station st_1 transmission delivered cleanly.
-[  3.730s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "roviding a significantly larger file,..."
-[  3.828s] | SUCCESS      | Station st_1 transmission delivered cleanly.
-[  5.165s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
-[  5.291s] | SUCCESS      | Station st_2 transmission delivered cleanly.
-[  5.305s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "/CD collisions over a shared bus netw..."
-[  5.473s] | SUCCESS      | Station st_2 transmission delivered cleanly.
-[  5.516s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "roviding a significantly larger file,..."
-[  5.592s] | SUCCESS      | Station st_2 transmission delivered cleanly.
+[130.896s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[131.036s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.082s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[131.176s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.190s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[131.291s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.327s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[131.448s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.474s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[131.560s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.596s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[131.668s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.704s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[131.807s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.852s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[131.973s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[131.999s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[132.089s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.118s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[132.202s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.248s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[132.355s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.391s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[132.485s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.518s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[132.652s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.678s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[132.824s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.836s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[132.917s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[132.953s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[133.083s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.104s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[133.243s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.256s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[133.351s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.365s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[133.481s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.493s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[133.571s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[133.581s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[133.726s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.758s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[133.857s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[133.864s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[133.968s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[133.985s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ral minutes to complete their transmi..."
+[134.107s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[134.110s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[134.253s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[134.258s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ves you ample time to start up multip..."
+[134.318s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[134.327s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[134.461s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[134.470s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[134.551s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[134.561s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[134.641s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[134.644s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[134.761s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[134.769s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[134.868s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[134.873s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[134.947s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[134.953s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[135.017s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[135.018s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[135.085s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[135.088s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[135.197s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[135.202s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[135.297s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[135.309s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[135.414s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[135.421s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " a significantly larger file, the sta..."
+[135.569s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[135.577s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[135.707s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[135.708s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[135.851s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[135.855s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[135.855s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[135.984s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[135.985s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[135.987s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[135.988s] | COLLISION    | Stations ['S3', 'S1'] collided on wire! (Active signals interfered)
+[136.052s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[136.079s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[136.080s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[136.080s] | COLLISION    | Stations ['S1', 'S3'] collided on wire! (Active signals interfered)
+[136.212s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[136.225s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[136.236s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[136.367s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[136.403s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[136.557s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[136.560s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[136.697s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[136.717s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[136.786s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[136.795s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[136.848s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[136.860s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[136.916s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[136.920s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[137.054s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[137.085s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[137.162s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[137.175s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[137.318s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[137.328s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[137.330s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[137.394s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[137.425s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[137.425s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[137.548s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[137.555s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[137.556s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[137.566s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[137.672s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[137.680s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[137.830s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[137.843s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[137.843s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[137.911s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[137.930s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[137.931s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[138.043s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[138.050s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[138.222s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[138.230s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[138.345s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[138.350s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[138.350s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[138.363s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[138.488s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[138.488s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[138.564s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[138.569s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[138.668s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[138.672s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[138.733s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[138.743s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[138.828s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[138.830s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[138.905s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[138.910s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[138.910s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[139.032s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[139.060s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[139.067s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[139.154s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[139.156s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[139.226s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[139.233s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[139.343s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[139.347s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[139.347s] | COLLISION    | Stations ['S2', 'S1'] collided on wire! (Active signals interfered)
+[139.422s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[139.488s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[139.501s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[139.614s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[139.627s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[139.738s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[139.738s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[139.798s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[139.799s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[139.799s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[139.811s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[139.918s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[139.919s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[140.021s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[140.022s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[140.181s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[140.193s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[140.280s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[140.291s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[140.439s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[140.452s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[140.452s] | COLLISION    | Stations ['S2', 'S1'] collided on wire! (Active signals interfered)
+[140.566s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[140.602s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[140.615s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[140.615s] | COLLISION    | Stations ['S1', 'S4'] collided on wire! (Active signals interfered)
+[140.617s] | COLLISION    | Stations ['S1', 'S4', 'S2'] collided on wire! (Active signals interfered)
+[140.627s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[140.671s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[140.677s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[140.684s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[140.834s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[140.837s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[140.980s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[140.986s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[141.141s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[141.149s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[141.312s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[141.324s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[141.385s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[141.394s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[141.471s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[141.481s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[141.584s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[141.585s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[141.684s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[141.691s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[141.825s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[141.837s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[142.012s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[142.025s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[142.094s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[142.094s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[142.233s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[142.234s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[142.357s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[142.367s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[142.493s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[142.502s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[142.575s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[142.577s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[142.740s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[142.751s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[142.814s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[142.815s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[142.989s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[142.991s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[143.061s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[143.068s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[143.069s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[143.148s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[143.199s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[143.200s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[143.302s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[143.309s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[143.309s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[143.396s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[143.449s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[143.450s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[143.552s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[143.557s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[143.626s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[143.631s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[143.693s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[143.698s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[143.849s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[143.850s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[143.980s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[143.980s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[144.042s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[144.045s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[144.207s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[144.213s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[144.213s] | COLLISION    | Stations ['S2', 'S1'] collided on wire! (Active signals interfered)
+[144.310s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[144.351s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[144.352s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[144.476s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[144.488s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[144.554s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[144.555s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[144.693s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[144.700s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[144.800s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[144.801s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[144.863s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[144.875s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[145.024s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[145.027s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[145.176s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[145.176s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[145.337s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[145.339s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[145.439s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[145.446s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[145.567s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[145.568s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[145.570s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[145.685s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[145.716s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[145.716s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[145.829s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[145.834s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[145.834s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[145.846s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[145.947s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[145.947s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[146.022s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[146.023s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[146.085s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[146.089s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[146.163s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[146.167s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[146.168s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[146.181s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[146.264s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[146.268s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[146.415s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[146.418s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[146.544s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[146.553s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[146.661s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[146.668s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[146.816s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[146.824s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[146.935s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[146.939s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[147.024s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[147.027s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[147.102s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[147.113s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[147.263s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[147.273s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[147.382s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[147.382s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[147.468s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[147.474s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[147.648s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[147.652s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[147.715s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[147.718s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[147.719s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[147.731s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[147.814s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[147.822s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[147.893s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[147.894s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[147.991s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[147.995s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[147.997s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[148.100s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[148.101s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[148.102s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[148.198s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[148.198s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[148.273s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[148.278s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[148.408s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[148.409s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[148.501s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[148.502s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[148.677s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[148.689s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[148.783s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[148.789s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[148.897s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[148.901s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[148.963s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[148.968s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[149.071s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[149.076s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[149.161s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[149.166s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[149.166s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[149.179s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[149.287s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[149.290s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[149.364s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[149.369s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[149.448s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[149.452s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[149.560s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[149.568s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[149.701s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[149.706s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[149.806s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[149.807s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etection, carrier sensing, and expone..."
+[149.926s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[149.932s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[149.993s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[149.993s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[150.076s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[150.081s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[150.207s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[150.209s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[150.357s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[150.367s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[150.368s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[150.369s] | COLLISION    | Stations ['S3', 'S4', 'S2'] collided on wire! (Active signals interfered)
+[150.381s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[150.500s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[150.509s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[150.509s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[150.510s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[150.609s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[150.619s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[150.619s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[150.746s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[150.755s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[150.887s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[150.891s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[150.978s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[150.991s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[150.991s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[150.991s] | COLLISION    | Stations ['S3', 'S4', 'S1'] collided on wire! (Active signals interfered)
+[151.002s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[151.089s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[151.114s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[151.115s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[151.185s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[151.190s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[151.291s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[151.296s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[151.387s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[151.388s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[151.468s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[151.473s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[151.548s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[151.552s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[151.616s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[151.619s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[151.720s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[151.721s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " over a shared bus network. By provid..."
+[151.774s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[151.780s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[151.926s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[151.932s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[152.015s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[152.018s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[152.152s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[152.159s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[152.159s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[152.279s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[152.280s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[152.280s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[152.417s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[152.423s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[152.425s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[152.438s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[152.500s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[152.502s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[152.502s] | COLLISION    | Stations ['S3', 'S1'] collided on wire! (Active signals interfered)
+[152.502s] | COLLISION    | Stations ['S3', 'S1', 'S4'] collided on wire! (Active signals interfered)
+[152.515s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[152.612s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[152.647s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[152.647s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[152.735s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[152.743s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[152.806s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[152.807s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[152.860s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[152.864s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[152.927s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[152.936s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[153.082s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[153.085s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[153.166s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[153.169s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[153.301s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[153.301s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[153.438s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[153.443s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[153.528s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[153.530s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[153.704s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[153.709s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[153.838s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[153.841s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[153.941s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[153.945s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[153.945s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[153.958s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[154.052s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[154.055s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[154.181s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[154.183s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[154.183s] | COLLISION    | Stations ['S1', 'S3'] collided on wire! (Active signals interfered)
+[154.260s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[154.265s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[154.273s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[154.337s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[154.339s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[154.340s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[154.350s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[154.472s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[154.473s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[154.603s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[154.609s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[154.609s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[154.619s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[154.718s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[154.719s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "d S2) in different terminals and obse..."
+[154.801s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[154.802s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[154.802s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[154.815s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[154.870s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[154.871s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[154.947s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[154.952s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[155.075s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[155.081s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[155.081s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[155.140s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[155.216s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[155.223s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[155.224s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[155.236s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[155.368s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[155.368s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[155.369s] | COLLISION    | Stations ['S1', 'S3'] collided on wire! (Active signals interfered)
+[155.448s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[155.477s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[155.477s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[155.629s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[155.630s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[155.705s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[155.717s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[155.856s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[155.868s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[155.981s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[155.986s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[156.055s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[156.060s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[156.144s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[156.148s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[156.248s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[156.260s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[156.260s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[156.332s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[156.359s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[156.360s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[156.360s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[156.373s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[156.417s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[156.422s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[156.423s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[156.435s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[156.559s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[156.560s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[156.676s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[156.677s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[156.808s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[156.815s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[156.987s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[156.998s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[157.134s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[157.136s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[157.139s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[157.148s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[157.223s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[157.224s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[157.372s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[157.378s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[157.460s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[157.468s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[157.576s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[157.581s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[157.669s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[157.672s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[157.672s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[157.779s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[157.825s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[157.825s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[157.892s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[157.894s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[157.969s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[157.975s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[158.111s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[158.117s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[158.260s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[158.261s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[158.261s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[158.274s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[158.385s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[158.385s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[158.385s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[158.397s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[158.483s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[158.484s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[158.553s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[158.555s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[158.682s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[158.683s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[158.683s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[158.696s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[158.809s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[158.812s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[158.895s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[158.898s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ral minutes to complete their transmi..."
+[159.030s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[159.033s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[159.119s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[159.127s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[159.127s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[159.140s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[159.233s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[159.244s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[159.244s] | COLLISION    | Stations ['S3', 'S1'] collided on wire! (Active signals interfered)
+[159.309s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[159.382s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[159.383s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[159.385s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[159.444s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[159.487s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[159.493s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[159.493s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[159.506s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[159.635s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[159.637s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ves you ample time to start up multip..."
+[159.763s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[159.771s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[159.897s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[159.903s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[160.010s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[160.018s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[160.114s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[160.120s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[160.177s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[160.182s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[160.296s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[160.299s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[160.377s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[160.377s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[160.446s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[160.451s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[160.580s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[160.585s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[160.585s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[160.598s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[160.710s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[160.710s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[160.711s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[160.723s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[160.810s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[160.811s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[160.877s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[160.878s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[160.974s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[160.978s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[161.052s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[161.060s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[161.060s] | COLLISION    | Stations ['S3', 'S1'] collided on wire! (Active signals interfered)
+[161.125s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[161.174s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[161.176s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[161.176s] | COLLISION    | Stations ['S4', 'S2'] collided on wire! (Active signals interfered)
+[161.188s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[161.302s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[161.311s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[161.452s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[161.456s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[161.518s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[161.530s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[161.530s] | COLLISION    | Stations ['S4', 'S3'] collided on wire! (Active signals interfered)
+[161.531s] | COLLISION    | Stations ['S4', 'S3', 'S2'] collided on wire! (Active signals interfered)
+[161.543s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[161.606s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[161.651s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[161.656s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[161.781s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[161.793s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[161.948s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[161.952s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[162.090s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[162.097s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[162.235s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[162.238s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[162.302s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[162.308s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[162.360s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[162.365s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[162.499s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[162.502s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[162.644s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[162.648s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[162.718s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[162.719s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[162.802s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[162.811s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " a significantly larger file, the sta..."
+[162.902s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[162.902s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[163.073s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[163.085s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[163.205s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[163.206s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[163.331s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[163.336s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[163.461s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[163.465s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[163.564s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[163.567s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[163.632s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[163.636s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[163.693s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[163.701s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[163.825s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[163.830s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[163.831s] | COLLISION    | Stations ['S2', 'S1'] collided on wire! (Active signals interfered)
+[163.831s] | COLLISION    | Stations ['S2', 'S1', 'S3'] collided on wire! (Active signals interfered)
+[163.898s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[163.927s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[163.972s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[163.975s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[164.089s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[164.090s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[164.261s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[164.268s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[164.333s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[164.343s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[164.443s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[164.444s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[164.526s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[164.527s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[164.644s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[164.656s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[164.656s] | COLLISION    | Stations ['S4', 'S3'] collided on wire! (Active signals interfered)
+[164.669s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[164.783s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[164.789s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[164.790s] | COLLISION    | Stations ['S1', 'S2'] collided on wire! (Active signals interfered)
+[164.860s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[164.918s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[164.919s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[165.053s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[165.063s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[165.180s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[165.188s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[165.273s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[165.275s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[165.349s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[165.360s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[165.361s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[165.373s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[165.508s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[165.510s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[165.594s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[165.595s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[165.662s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[165.668s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[165.757s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[165.768s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[165.769s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[165.843s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[165.860s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[165.867s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[166.002s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[166.005s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[166.155s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[166.159s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[166.268s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[166.276s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[166.402s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[166.403s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[166.501s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[166.512s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[166.577s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[166.580s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[166.581s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[166.691s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[166.722s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[166.727s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[166.727s] | COLLISION    | Stations ['S4', 'S1'] collided on wire! (Active signals interfered)
+[166.740s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[166.831s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[166.831s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[166.956s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[166.969s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[167.031s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[167.044s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[167.153s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[167.159s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[167.273s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[167.279s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[167.373s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[167.380s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[167.495s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[167.497s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[167.497s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[167.556s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[167.636s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[167.637s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[167.735s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[167.740s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[167.836s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[167.848s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[167.998s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[168.002s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[168.115s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[168.118s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[168.278s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[168.288s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[168.289s] | COLLISION    | Stations ['S2', 'S1'] collided on wire! (Active signals interfered)
+[168.400s] | TX_ABORT     | Station S1   aborted/ended due to collision.
+[168.406s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[168.407s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[168.488s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[168.489s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[168.618s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[168.629s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[168.760s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[168.765s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[168.858s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[168.861s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[168.984s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[168.989s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[169.043s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[169.054s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[169.155s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[169.156s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[169.210s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[169.210s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[169.211s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[169.223s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[169.317s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[169.322s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[169.480s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[169.487s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[169.632s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[169.639s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[169.640s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[169.652s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[169.772s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[169.777s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[169.777s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[169.790s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[169.851s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[169.852s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[170.002s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[170.015s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[170.178s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[170.183s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[170.235s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[170.237s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[170.361s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[170.364s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[170.537s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[170.543s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[170.636s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[170.643s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[170.742s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[170.748s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[170.896s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[170.902s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[171.064s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[171.074s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[171.157s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[171.165s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[171.253s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[171.259s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[171.342s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[171.342s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[171.468s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[171.476s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[171.616s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[171.619s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[171.732s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[171.740s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[171.850s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[171.852s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[171.962s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[171.968s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[171.969s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[172.033s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[172.086s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[172.096s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[172.273s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[172.273s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[172.410s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[172.418s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[172.418s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[172.431s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[172.509s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[172.517s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[172.642s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[172.654s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[172.802s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[172.814s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etection, carrier sensing, and expone..."
+[172.886s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[172.891s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[172.892s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[172.902s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[172.999s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[173.004s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[173.101s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[173.127s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[173.285s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[173.305s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[173.386s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[173.394s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[173.568s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[173.569s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[173.569s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[173.635s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[173.717s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[173.717s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[173.786s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[173.789s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[173.789s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[173.802s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[173.857s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[173.869s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[173.931s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[173.948s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[174.006s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[174.015s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[174.077s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[174.077s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[174.219s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[174.219s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " over a shared bus network. By provid..."
+[174.338s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[174.341s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[174.436s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[174.448s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[174.448s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[174.461s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[174.511s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[174.512s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[174.593s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[174.595s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[174.757s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[174.760s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[174.879s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[174.881s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[174.941s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[174.943s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[175.030s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[175.036s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[175.037s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[175.130s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[175.160s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[175.165s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[175.165s] | COLLISION    | Stations ['S2', 'S4'] collided on wire! (Active signals interfered)
+[175.178s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[175.237s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[175.242s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[175.365s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[175.377s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[175.468s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[175.477s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[175.560s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[175.560s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[175.618s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[175.631s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[175.631s] | COLLISION    | Stations ['S3', 'S4'] collided on wire! (Active signals interfered)
+[175.644s] | TX_ABORT     | Station S4   aborted/ended due to collision.
+[175.725s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[175.726s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[175.727s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[175.862s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[175.880s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[175.880s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[176.018s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.031s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[176.165s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.188s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[176.265s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.277s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[176.278s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[176.363s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[176.363s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[176.364s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[176.474s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.475s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "d S2) in different terminals and obse..."
+[176.532s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[176.538s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[176.678s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.690s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[176.815s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[176.818s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[176.933s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[176.935s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[177.098s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[177.105s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[177.234s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[177.242s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[177.340s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[177.347s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[177.425s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[177.426s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[177.575s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[177.582s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[177.660s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[177.664s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[177.838s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[177.842s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[177.940s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[177.953s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[178.092s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[178.098s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[178.243s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[178.246s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[178.402s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[178.405s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[178.510s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[178.514s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[178.577s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[178.590s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[178.710s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[178.714s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[178.789s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[178.790s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[178.918s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[178.922s] | TX_START     | Station S4   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[178.998s] | SUCCESS      | Station S4   transmission delivered cleanly.
+[179.004s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[179.101s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[179.110s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[179.249s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[179.252s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[179.335s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[179.370s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[179.525s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[179.534s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[179.678s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[179.690s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[179.799s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[179.804s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[179.860s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[179.862s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[180.002s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[180.043s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[180.044s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[180.135s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[180.175s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[180.186s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[180.264s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[180.270s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ral minutes to complete their transmi..."
+[180.395s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[180.403s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[180.508s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[180.519s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ves you ample time to start up multip..."
+[180.653s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[180.657s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[180.792s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[180.818s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[180.894s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[180.906s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[180.907s] | COLLISION    | Stations ['S2', 'S3'] collided on wire! (Active signals interfered)
+[181.002s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[181.046s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[181.046s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[181.160s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[181.166s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[181.269s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[181.279s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[181.418s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[181.420s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[181.476s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[181.488s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[181.616s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[181.652s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[181.786s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[181.809s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[181.869s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[181.879s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[181.994s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.029s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[182.088s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.123s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[182.263s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.277s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " a significantly larger file, the sta..."
+[182.394s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[182.395s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[182.458s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.469s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[182.614s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[182.616s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[182.678s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.693s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[182.768s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[182.794s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[182.933s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[182.935s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[183.077s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[183.095s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[183.215s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[183.223s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[183.304s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[183.318s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[183.469s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[183.477s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[183.559s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[183.565s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[183.680s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[183.682s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[183.750s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[183.752s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[183.852s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[183.860s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[184.002s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.045s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[184.193s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.198s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[184.339s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[184.343s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[184.470s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.473s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[184.528s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[184.528s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "This is a long stream of data for tes..."
+[184.605s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.641s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etwork. By providing a significantly ..."
+[184.726s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.742s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etection, carrier sensing, and expone..."
+[184.836s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[184.837s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ral minutes to complete their transmi..."
+[184.893s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[184.893s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[184.963s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[184.969s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ves you ample time to start up multip..."
+[185.077s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[185.087s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " over a shared bus network. By provid..."
+[185.232s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[185.244s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "erminals and observe how the collisio..."
+[185.377s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[185.401s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[185.542s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[185.549s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[185.608s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[185.621s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[185.741s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[185.749s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[185.853s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[185.853s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " a significantly larger file, the sta..."
+[185.963s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[185.973s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "d S2) in different terminals and obse..."
+[186.051s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[186.059s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ete their transmission. This extended..."
+[186.192s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[186.199s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[186.310s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[186.315s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "o start up multiple stations (like S1..."
+[186.432s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[186.462s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[186.593s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[186.603s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " how the collision detection, carrier..."
+[186.669s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[186.688s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[186.820s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[186.830s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "s behave in real-time under contentio..."
+[186.985s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[186.992s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ral minutes to complete their transmi..."
+[187.101s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[187.112s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[187.172s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[187.181s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ves you ample time to start up multip..."
+[187.328s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[187.328s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ger file, the stations will require s..."
+[187.440s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[187.452s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[187.536s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[187.538s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "on. This extended transmission window..."
+[187.669s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[187.672s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[187.826s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[187.835s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[187.924s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[187.942s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[188.007s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[188.008s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "etection, carrier sensing, and expone..."
+[188.135s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[188.140s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " a significantly larger file, the sta..."
+[188.235s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[188.240s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "e under contention. This is a long st..."
+[188.374s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[188.420s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: " over a shared bus network. By provid..."
+[188.537s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[188.563s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ns will require several minutes to co..."
+[188.694s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[188.710s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[188.774s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[188.777s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "ansmission window gives you ample tim..."
+[188.911s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[188.914s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[189.011s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[189.013s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "d S2) in different terminals and obse..."
+[189.112s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[189.157s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[189.157s] | COLLISION    | Stations ['S3', 'S2'] collided on wire! (Active signals interfered)
+[189.214s] | TX_ABORT     | Station S3   aborted/ended due to collision.
+[189.220s] | TX_ABORT     | Station S2   aborted/ended due to collision.
+[189.225s] | TX_START     | Station S3   (pos:  100.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[189.345s] | SUCCESS      | Station S3   transmission delivered cleanly.
+[189.356s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[189.466s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[189.527s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[189.635s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[189.665s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[189.809s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[189.835s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[189.936s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[189.974s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[190.112s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.207s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[190.262s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.314s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etection, carrier sensing, and expone..."
+[190.390s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.448s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[190.526s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.551s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " over a shared bus network. By provid..."
+[190.631s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.645s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[190.777s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.864s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[190.942s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[190.973s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "d S2) in different terminals and obse..."
+[191.088s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[191.152s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[191.282s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[191.380s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "This is a long stream of data for tes..."
+[191.460s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[191.508s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etwork. By providing a significantly ..."
+[191.660s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[191.734s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ral minutes to complete their transmi..."
+[191.851s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[191.892s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ves you ample time to start up multip..."
+[192.048s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.083s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "erminals and observe how the collisio..."
+[192.201s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.235s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "al backoff mechanisms behave in real-..."
+[192.374s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.409s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "m of data for testing CSMA/CD collisi..."
+[192.503s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.550s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " a significantly larger file, the sta..."
+[192.629s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.691s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ete their transmission. This extended..."
+[192.747s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.806s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "o start up multiple stations (like S1..."
+[192.895s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[192.943s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " how the collision detection, carrier..."
+[193.040s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.074s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "s behave in real-time under contentio..."
+[193.141s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.154s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "g CSMA/CD collisions over a shared bu..."
+[193.267s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.339s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ger file, the stations will require s..."
+[193.453s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.504s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "on. This extended transmission window..."
+[193.590s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.602s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "stations (like S1 and S2) in differen..."
+[193.667s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.739s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "etection, carrier sensing, and expone..."
+[193.834s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[193.878s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "e under contention. This is a long st..."
+[194.027s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[194.092s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: " over a shared bus network. By provid..."
+[194.175s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[194.221s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ns will require several minutes to co..."
+[194.343s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[194.366s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "ansmission window gives you ample tim..."
+[194.438s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[194.557s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "d S2) in different terminals and obse..."
+[194.702s] | SUCCESS      | Station S2   transmission delivered cleanly.
+[194.739s] | TX_START     | Station S2   (pos:  200.0m) started transmitting: "nsing, and exponential backoff mechan..."
+[194.883s] | SUCCESS      | Station S2   transmission delivered cleanly.
