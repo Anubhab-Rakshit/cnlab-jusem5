@@ -32,9 +32,9 @@ def main():
         
         plt.subplot(1, 3, 3)
         plt.plot(df_p['p'], df_p['throughput'], marker='o', color='green')
-        plt.title('Throughput vs p')
+        plt.title('Efficiency vs p')
         plt.xlabel('Probability (p)')
-        plt.ylabel('Throughput')
+        plt.ylabel('Efficiency (frames/s)')
         plt.grid(True)
         
         plt.tight_layout()
@@ -45,8 +45,8 @@ def main():
     # 2. All schemes vs N
     schemes = ["non-persistent", "1-persistent", "p-persistent", "csmacd"]
     metrics = ['collisions', 'avg_delay', 'throughput']
-    titles = ['Collisions vs N', 'Avg Transmission Delay vs N', 'Throughput vs N']
-    ylabels = ['Collisions', 'Delay (s)', 'Throughput']
+    titles = ['Collisions vs N', 'Avg Transmission Delay vs N', 'Efficiency vs N']
+    ylabels = ['Collisions', 'Delay (s)', 'Efficiency (frames/s)']
     
     plt.figure(figsize=(15, 5))
     

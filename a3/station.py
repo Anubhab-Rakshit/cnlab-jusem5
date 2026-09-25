@@ -15,6 +15,7 @@ except Exception:
 class Colors:
     GREEN = '\033[92m'
     RED = '\033[91m'
+    \
     YELLOW = '\033[93m'
     CYAN = '\033[96m'
     BLUE = '\033[94m'
@@ -234,10 +235,12 @@ class Station:
             time.sleep(self.slot_time * random.randint(1, 4))
             
         self.end_time = time.time()
-        delay = (self.end_time - self.start_time) / self.total_frames if self.total_frames > 0 else 0
+        total_time = self.end_time - self.start_time
+        delay = total_time / self.total_frames if self.total_frames > 0 else 0
+        efficiency = self.total_frames / total_time if total_time > 0 else 0
         
         print("-" * 75)
-        print(f"Station {self.station_id} finished. Frames: {self.total_frames}, Collisions: {self.collisions}, Avg Delay: {delay:.3f}s")
+        print(f"Station {self.station_id} finished. Frames: {self.total_frames}, Collisions: {self.collisions}, Avg Delay: {delay:.3f}s, Efficiency: {efficiency:.2f} frames/s")
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -1,69 +1,119 @@
---- CSMA Channel Emulation Trace Started at 2026-09-25 15:46:49.039303 ---
+--- CSMA Channel Emulation Trace Started at 2026-09-25 16:27:53.808406 ---
 Time       | Event        | Details
 --------------------------------------------------------------------------------
-[  6.660s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
-[  6.732s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[  6.777s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
-[  6.875s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[  6.911s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
-[  7.049s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[  7.085s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
-[  7.233s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[  7.275s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
-[  7.398s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[ 64.722s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
-[ 64.840s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[ 64.852s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
-[ 64.941s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[ 64.966s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
-[ 65.127s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[ 65.152s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
-[ 65.239s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[ 65.284s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
-[ 65.406s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[223.432s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
-[223.569s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[223.583s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
-[223.719s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[223.732s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
-[223.870s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[223.891s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
-[223.998s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[224.022s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
-[224.118s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[224.164s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " and transmitted frame-by-frame with ..."
-[224.315s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[224.340s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ror checking! CSMA techniques impleme..."
-[224.490s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[224.503s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ersistent, Non-Persistent, p-Persiste..."
-[224.622s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[224.644s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "SMA/CD with Exponential Backoff. "
-[224.757s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[517.698s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
-[517.825s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[517.866s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
-[518.005s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.037s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
-[518.190s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.204s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
-[518.368s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.395s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
-[518.531s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.558s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " and transmitted frame-by-frame with ..."
-[518.696s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.731s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ror checking! CSMA techniques impleme..."
-[518.831s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.853s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ersistent, Non-Persistent, p-Persiste..."
-[518.916s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[518.950s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "SMA/CD with Exponential Backoff. "
-[519.013s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[537.898s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
-[538.025s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[538.061s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " demonstrate real data transmission a..."
-[538.138s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[538.179s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "6-byte Ethernet payload chunks and tr..."
-[538.261s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[538.283s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "iques implemented: 1-Persistent, Non-..."
-[538.407s] | SUCCESS      | Station S1   transmission delivered cleanly.
-[538.432s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " "
-[538.559s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[  0.523s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
+[  0.526s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
+[  0.526s] | COLLISION    | Stations ['st_0', 'st_1', 'st_2'] collided on wire! (Active signals interfered)
+[  0.534s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  0.539s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  0.612s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  0.613s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
+[  0.615s] | COLLISION    | Stations ['st_1', 'st_3'] collided on wire! (Active signals interfered)
+[  0.623s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  0.623s] | COLLISION    | Stations ['st_3', 'st_2'] collided on wire! (Active signals interfered)
+[  0.636s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  0.728s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  0.728s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
+[  0.735s] | COLLISION    | Stations ['st_3', 'st_2'] collided on wire! (Active signals interfered)
+[  0.748s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  0.839s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  0.843s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
+[  0.844s] | COLLISION    | Stations ['st_4', 'st_0'] collided on wire! (Active signals interfered)
+[  0.847s] | COLLISION    | Stations ['st_4', 'st_0', 'st_2'] collided on wire! (Active signals interfered)
+[  0.857s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  0.857s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  0.857s] | COLLISION    | Stations ['st_2', 'st_0'] collided on wire! (Active signals interfered)
+[  0.860s] | COLLISION    | Stations ['st_2', 'st_0', 'st_1'] collided on wire! (Active signals interfered)
+[  0.870s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  0.873s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  0.957s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  0.957s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
+[  0.961s] | COLLISION    | Stations ['st_4', 'st_1'] collided on wire! (Active signals interfered)
+[  0.970s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  1.035s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  1.040s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
+[  1.040s] | COLLISION    | Stations ['st_3', 'st_4'] collided on wire! (Active signals interfered)
+[  1.042s] | COLLISION    | Stations ['st_3', 'st_4', 'st_2'] collided on wire! (Active signals interfered)
+[  1.052s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  1.054s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  1.204s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  1.208s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
+[  1.209s] | COLLISION    | Stations ['st_4', 'st_3'] collided on wire! (Active signals interfered)
+[  1.220s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  1.282s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  1.289s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
+[  1.291s] | COLLISION    | Stations ['st_1', 'st_0'] collided on wire! (Active signals interfered)
+[  1.292s] | COLLISION    | Stations ['st_1', 'st_0', 'st_3'] collided on wire! (Active signals interfered)
+[  1.301s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  1.303s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  1.303s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  1.413s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "This is a long stream of data for tes..."
+[  1.511s] | SUCCESS      | Station st_1 transmission delivered cleanly.
+[  1.511s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "This is a long stream of data for tes..."
+[  1.690s] | SUCCESS      | Station st_3 transmission delivered cleanly.
+[  1.695s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
+[  1.696s] | COLLISION    | Stations ['st_2', 'st_4'] collided on wire! (Active signals interfered)
+[  1.696s] | COLLISION    | Stations ['st_2', 'st_4', 'st_0'] collided on wire! (Active signals interfered)
+[  1.697s] | COLLISION    | Stations ['st_2', 'st_4', 'st_0', 'st_1'] collided on wire! (Active signals interfered)
+[  1.708s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  1.710s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  1.711s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  1.863s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  1.865s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
+[  1.866s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
+[  1.866s] | COLLISION    | Stations ['st_0', 'st_1', 'st_3'] collided on wire! (Active signals interfered)
+[  1.876s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  1.879s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  1.880s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  1.880s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "/CD collisions over a shared bus netw..."
+[  2.053s] | SUCCESS      | Station st_3 transmission delivered cleanly.
+[  2.054s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "This is a long stream of data for tes..."
+[  2.125s] | SUCCESS      | Station st_4 transmission delivered cleanly.
+[  2.129s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
+[  2.132s] | COLLISION    | Stations ['st_2', 'st_3'] collided on wire! (Active signals interfered)
+[  2.136s] | COLLISION    | Stations ['st_2', 'st_3', 'st_1'] collided on wire! (Active signals interfered)
+[  2.143s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  2.146s] | TX_ABORT     | Station st_3 aborted/ended due to collision.
+[  2.213s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  2.218s] | TX_START     | Station st_3 (pos:  779.5m) started transmitting: "roviding a significantly larger file,..."
+[  2.353s] | SUCCESS      | Station st_3 transmission delivered cleanly.
+[  2.357s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "/CD collisions over a shared bus netw..."
+[  2.359s] | COLLISION    | Stations ['st_4', 'st_1'] collided on wire! (Active signals interfered)
+[  2.371s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  2.484s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  2.485s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "/CD collisions over a shared bus netw..."
+[  2.562s] | SUCCESS      | Station st_4 transmission delivered cleanly.
+[  2.570s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "This is a long stream of data for tes..."
+[  2.738s] | SUCCESS      | Station st_0 transmission delivered cleanly.
+[  2.741s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
+[  2.742s] | COLLISION    | Stations ['st_4', 'st_2'] collided on wire! (Active signals interfered)
+[  2.753s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  2.818s] | TX_ABORT     | Station st_2 aborted/ended due to collision.
+[  2.825s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "/CD collisions over a shared bus netw..."
+[  2.830s] | COLLISION    | Stations ['st_1', 'st_4'] collided on wire! (Active signals interfered)
+[  2.837s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  2.952s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  2.954s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
+[  2.954s] | COLLISION    | Stations ['st_4', 'st_0'] collided on wire! (Active signals interfered)
+[  2.966s] | TX_ABORT     | Station st_4 aborted/ended due to collision.
+[  2.967s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  2.980s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "/CD collisions over a shared bus netw..."
+[  3.153s] | SUCCESS      | Station st_0 transmission delivered cleanly.
+[  3.159s] | TX_START     | Station st_4 (pos:  685.6m) started transmitting: "roviding a significantly larger file,..."
+[  3.249s] | SUCCESS      | Station st_4 transmission delivered cleanly.
+[  3.255s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "roviding a significantly larger file,..."
+[  3.256s] | COLLISION    | Stations ['st_0', 'st_1'] collided on wire! (Active signals interfered)
+[  3.269s] | TX_ABORT     | Station st_0 aborted/ended due to collision.
+[  3.368s] | TX_ABORT     | Station st_1 aborted/ended due to collision.
+[  3.379s] | TX_START     | Station st_0 (pos:  859.1m) started transmitting: "roviding a significantly larger file,..."
+[  3.503s] | SUCCESS      | Station st_0 transmission delivered cleanly.
+[  3.504s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "/CD collisions over a shared bus netw..."
+[  3.683s] | SUCCESS      | Station st_1 transmission delivered cleanly.
+[  3.730s] | TX_START     | Station st_1 (pos:  999.3m) started transmitting: "roviding a significantly larger file,..."
+[  3.828s] | SUCCESS      | Station st_1 transmission delivered cleanly.
+[  5.165s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "This is a long stream of data for tes..."
+[  5.291s] | SUCCESS      | Station st_2 transmission delivered cleanly.
+[  5.305s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "/CD collisions over a shared bus netw..."
+[  5.473s] | SUCCESS      | Station st_2 transmission delivered cleanly.
+[  5.516s] | TX_START     | Station st_2 (pos:  346.1m) started transmitting: "roviding a significantly larger file,..."
+[  5.592s] | SUCCESS      | Station st_2 transmission delivered cleanly.

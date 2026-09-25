@@ -32,6 +32,7 @@ def run_simulation(strategy, n_stations, p=0.5, frames_per_station=5, port=8000)
     # Wait for all stations to finish and collect their outputs
     total_delay = 0
     total_station_collisions = 0
+    total_efficiency = 0.0
     
     import re
     for i, proc in enumerate(station_procs):
@@ -40,23 +41,21 @@ def run_simulation(strategy, n_stations, p=0.5, frames_per_station=5, port=8000)
         # Parse stdout: Station st_X finished. Frames: 5, Collisions: 2, Avg Delay: 0.123s
         for raw_line in stdout.splitlines():
             line = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_line)
-            if "Avg Delay:" in line:
+            if "Avg Delay:" in line and "Efficiency:" in line:
                 parts = line.split(",")
                 col_part = parts[1].split(":")[1].strip()
                 delay_part = parts[2].split(":")[1].strip().replace("s", "")
+                eff_part = parts[3].split(":")[1].strip().replace("frames/s", "").strip()
+                
                 total_station_collisions += int(col_part)
                 total_delay += float(delay_part)
+                total_efficiency += float(eff_part)
                 
     end_time = time.time()
     total_time = end_time - start_time
     
-    # We can compute throughput based on how much time was spent successfully transmitting
-    tx_time_per_frame = 0.1
-    total_frames = n_stations * frames_per_station
-    successful_tx_time = total_frames * tx_time_per_frame
-    throughput = successful_tx_time / total_time if total_time > 0 else 0
-    
     avg_delay = total_delay / n_stations if n_stations > 0 else 0
+    throughput = total_efficiency # Total frames/s across all stations
     
     # Stop channel
     import socket
