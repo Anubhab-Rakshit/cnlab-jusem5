@@ -1,0 +1,27 @@
+# ==============================================================================
+# ASSIGNMENT 3: CSMA & CSMA/CD SIMULATION RUN SHEET
+# ==============================================================================
+
+# 1. Run Live Channel Server (Terminal 1)
+python3 channel.py --port 8000
+
+# 2. Run Real File Transmission Demos (Terminal 2 & 3)
+# Demo A: Transmit entire 'sample.txt' file (automatically chunked into 46B frames)
+python3 station.py --id S1 --strategy csmacd --distance 100.0 --file sample.txt --port 8000
+
+# Demo B: Concurrent Contention & Collision Demo (Run S1 and S2 simultaneously)
+python3 station.py --id S1 --strategy 1-persistent --distance 100.0 --file sample.txt --port 8000 &
+python3 station.py --id S2 --strategy 1-persistent --distance 200.0 --file sample.txt --port 8000 &
+
+# 3. Run Full Automated Benchmark Suite (Phases 1 & 2)
+python3 simulate.py --quick
+# (or without --quick for full high-iteration analysis)
+# python3 simulate.py
+
+# 4. Generate & Open Comparison Plots
+python3 visualize.py
+open schemes_vs_N.png p_persistent_vs_p.png
+
+# 5. View Real-Time Trace Log
+head -n 35 trace_log.txt
+

@@ -1,0 +1,4 @@
+Computer Networks Lab Assignment 3: Medium Access Control & CSMA/CD Simulation.
+This file is used to demonstrate real data transmission across the virtual shared bus channel.
+The file is broken into 46-byte Ethernet payload chunks and transmitted frame-by-frame with CRC-32 error checking!
+CSMA techniques implemented: 1-Persistent, Non-Persistent, p-Persistent, and CSMA/CD with Exponential Backoff.

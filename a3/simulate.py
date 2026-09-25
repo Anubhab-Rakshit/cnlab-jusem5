@@ -14,13 +14,17 @@ def run_simulation(strategy, n_stations, p=0.5, frames_per_station=5, port=8000)
     station_procs = []
     start_time = time.time()
     for i in range(n_stations):
+        # assign random distance on a 1000m wire
+        import random
+        dist = round(random.uniform(0.0, 1000.0), 2)
         cmd = [
             sys.executable, "station.py",
             "--id", f"st_{i}",
             "--port", str(port),
             "--strategy", strategy,
             "--p", str(p),
-            "--frames", str(frames_per_station)
+            "--frames", str(frames_per_station),
+            "--distance", str(dist)
         ]
         proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, text=True)
         station_procs.append(proc)
@@ -29,11 +33,13 @@ def run_simulation(strategy, n_stations, p=0.5, frames_per_station=5, port=8000)
     total_delay = 0
     total_station_collisions = 0
     
+    import re
     for i, proc in enumerate(station_procs):
         stdout, _ = proc.communicate()
         print(f"\033[94m[PROGRESS]\033[0m Station {i+1}/{n_stations} completed.")
         # Parse stdout: Station st_X finished. Frames: 5, Collisions: 2, Avg Delay: 0.123s
-        for line in stdout.splitlines():
+        for raw_line in stdout.splitlines():
+            line = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_line)
             if "Avg Delay:" in line:
                 parts = line.split(",")
                 col_part = parts[1].split(":")[1].strip()

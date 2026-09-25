@@ -1,0 +1,69 @@
+--- CSMA Channel Emulation Trace Started at 2026-09-25 15:46:49.039303 ---
+Time       | Event        | Details
+--------------------------------------------------------------------------------
+[  6.660s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
+[  6.732s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[  6.777s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
+[  6.875s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[  6.911s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
+[  7.049s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[  7.085s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
+[  7.233s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[  7.275s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
+[  7.398s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[ 64.722s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
+[ 64.840s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[ 64.852s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
+[ 64.941s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[ 64.966s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
+[ 65.127s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[ 65.152s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
+[ 65.239s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[ 65.284s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
+[ 65.406s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[223.432s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
+[223.569s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[223.583s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
+[223.719s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[223.732s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
+[223.870s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[223.891s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
+[223.998s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[224.022s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
+[224.118s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[224.164s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " and transmitted frame-by-frame with ..."
+[224.315s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[224.340s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ror checking! CSMA techniques impleme..."
+[224.490s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[224.503s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ersistent, Non-Persistent, p-Persiste..."
+[224.622s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[224.644s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "SMA/CD with Exponential Backoff. "
+[224.757s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[517.698s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
+[517.825s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[517.866s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ess Control & CSMA/CD Simulation. Thi..."
+[518.005s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.037s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " used to demonstrate real data transm..."
+[518.190s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.204s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ross the virtual shared bus channel. ..."
+[518.368s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.395s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "is broken into 46-byte Ethernet paylo..."
+[518.531s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.558s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " and transmitted frame-by-frame with ..."
+[518.696s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.731s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ror checking! CSMA techniques impleme..."
+[518.831s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.853s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "ersistent, Non-Persistent, p-Persiste..."
+[518.916s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[518.950s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "SMA/CD with Exponential Backoff. "
+[519.013s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[537.898s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "Computer Networks Lab Assignment 3: M..."
+[538.025s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[538.061s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " demonstrate real data transmission a..."
+[538.138s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[538.179s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "6-byte Ethernet payload chunks and tr..."
+[538.261s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[538.283s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: "iques implemented: 1-Persistent, Non-..."
+[538.407s] | SUCCESS      | Station S1   transmission delivered cleanly.
+[538.432s] | TX_START     | Station S1   (pos:  100.0m) started transmitting: " "
+[538.559s] | SUCCESS      | Station S1   transmission delivered cleanly.

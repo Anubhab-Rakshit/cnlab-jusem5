@@ -33,15 +33,18 @@ def run_stress_test():
         start_time = time.time()
         station_procs = []
         for j in range(N):
-            cmd = [sys.executable, "station.py", "--id", f"st_{j}", "--port", str(port), "--strategy", strategy, "--p", str(p), "--frames", str(frames)]
+            dist = round(random.uniform(0.0, 1000.0), 2)
+            cmd = [sys.executable, "station.py", "--id", f"st_{j}", "--port", str(port), "--strategy", strategy, "--p", str(p), "--frames", str(frames), "--distance", str(dist)]
             sproc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
             station_procs.append(sproc)
             
         total_delay = 0
         total_collisions = 0
+        import re
         for sproc in station_procs:
             stdout, _ = sproc.communicate()
-            for line in stdout.splitlines():
+            for raw_line in stdout.splitlines():
+                line = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_line)
                 if "Avg Delay:" in line:
                     parts = line.split(",")
                     col_part = parts[1].split(":")[1].strip()
