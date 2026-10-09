@@ -41,10 +41,14 @@ class Station:
 
     def encode(self, data_bytes):
         N = self.walsh_size
-        chips = np.zeros(self.frame_size * 8 * N, dtype=np.float32)
+        # frame_size is data, we add 1 byte for length header
+        chips = np.zeros((self.frame_size + 1) * 8 * N, dtype=np.float32)
         
         if data_bytes:
-            bits = np.unpackbits(np.frombuffer(data_bytes, dtype=np.uint8))
+            # Prepend a 1-byte length header
+            header = bytes([len(data_bytes)])
+            payload = header + data_bytes
+            bits = np.unpackbits(np.frombuffer(payload, dtype=np.uint8))
             mapped = np.where(bits == 0, -1, 1).astype(np.float32)
             encoded_data = np.kron(mapped, self.walsh_code)
             chips[:len(encoded_data)] = encoded_data
@@ -56,11 +60,19 @@ class Station:
         reshaped = chips.reshape(-1, N)
         decoded_values = np.dot(reshaped, target_walsh_code) / N
         
+        # Energy detection
+        if np.mean(np.abs(decoded_values)) < 0.5:
+            return b""
+            
         bits = np.where(decoded_values > 0, 1, 0)
         decoded_bytes = np.packbits(bits).tobytes()
         
-        # Remove null bytes (silence)
-        return decoded_bytes.replace(b'\x00', b'')
+        # The first byte is the actual data length
+        valid_len = decoded_bytes[0]
+        if valid_len > self.frame_size:
+            return b"" # Corrupted length header
+            
+        return decoded_bytes[1:1+valid_len]
 
     def input_thread(self):
         if self.file_path:
